@@ -1,0 +1,18 @@
+.Form{
+    margin-top: 70px;
+    /*box-shadow: 1px 1px 1px  1px  grey;*/
+    text-align: center;
+    height: 550px;
+    text-align: center;
+}
+.Text_Div{
+    text-align: right;
+    margin: 20px;
+}
+.Input{
+    border:1px solid gray;
+    height: 40px;    
+    border-radius: 5px;
+}
+.card-footer{margin-top: 163px;}
+.Card-Footer-Text{margin: auto 10px;}
