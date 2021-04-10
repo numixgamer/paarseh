@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <style>
+            body{
+                background-image: url("BackGround.png");
+            }
+            #Navbar{
+                text-align: right;
+            }
+
+            #Navbar-Buttons-Div{
+                text-align: right;
+            }
+
+            /*.Navbar-btn{*/
+                /*border: 1px solid black;*
+            }/*/
+            .Navbar-btn:hover{
+                border: 1px solid black;
+            }
+
+            .Navbar-Btn{
+              background-color: transparent;
+              color: white;
+              border: 1px solid white;
+              height: 40px;
+              transition: all 1s;
+            }
+            nav{
+              padding: 0px;
+            }
+            #Footer{
+                background-color: #F3F3F3;
+                border: 1px solid #B6B6B6;
+            }
+
+            #main{
+                border: 1px solid transparent;
+                margin:75px 25px;
+                height: 78%;
+                text-align: right;
+            }
+            .Input{
+                transition: border 1s;
+                transition: box-shadow 0.25s;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid #BFBFBF;
+                /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+                height: 35px;
+                font-size: larger;
+                text-align: right;
+            }
+            .Input:focus{
+                border-color: #51ABF2;
+                box-shadow: 0 4px 8px 0 #A5D1F5, 0 3px 12px 0 #BEDEF8;
+            }
+            i{
+                font-size: 36px;
+            }
+            #Content-Way-Box{
+                /*border: 1px solid black;*/
+                text-align: left;
+                padding: 20px 40px 20px 0px;
+            }
+        </style>
+    </head>
+
+    <body style="overflow-x: hidden;">
+
+        <nav class="navbar-default navbar-fixed-top">
+            <div class="container-fluid" id="div">
+                <div class="#" class="navbar-header">
+                <a href="#" class="navbar-brand">Paarseh-Novin</a>
+                </div>
+
+                <ul class="nav navbar-nav pull-right col-md-3 hidden-xs">
+                    <li class=""><a href="#">پشتیبانی</a></li>
+                    <li class=""><a href="#">گزارش</a></li>
+                    <li class=""><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <form id="main" class="container">
+            
+
+            <!--Student Name-->
+            <h2 >
+                نام و نام خانوادگی
+            </h2>
+            <input type="text" class="Input col-md-4 pull-right" placeholder="نام و نام خانوادگی" id="Name" runat="server">
+            <br /><br />
+
+            <small class="col-md-4 pull-right">
+                نام و نام خانوادگی دانش آموز بدون کاراکتر های اضافه و ترجیحا به صورت فارسی
+            </small>
+            <!--Student Name-->
+
+            <br />
+            <br />
+            <div class="col-md-5">
+                <h2>ارسال نتایج با</h2>
+                <div id="Content-Way-Box" style="font-size: 25;">
+                    <input type="radio" id="radio-Whatsapp" runat="server">&ensp;<i class="fa fa-whatsapp"></i>Whatsapp<br /><br />
+                    <input type="radio" id="radio-SMS" runat="server">&ensp;<i class="fa fa-phone"></i>SMS<br /><br />
+                    <input type="radio" id="radio-Instagram" runat="server">&ensp;<i class="fa fa-instagram"></i>Instagram<br /><br />
+                    <input type="radio" id="radio-Telegram" runat="server">&ensp;<i class="fa fa-telegram"></i>Telegram<br /><br />
+                    <input type="radio" id="radio-Email" runat="server">&ensp;Email<br />
+                </div>
+                <input type="button" class="btn btn-primary col-md-3" value="Reset" onclick="CheckFalse()">
+            </div>
+            <br />
+            <br />
+
+            <!--Select Level-->
+            <h2>
+                انتخاب سطح
+            </h2>
+            <select class="Input col-md-4 pull-right" id="Option-Level" runat="server">
+                <option value="1">سطح 1</option>
+                <option value="2">سطح 2</option>
+                <option value="3">سطح 3</option>
+            </select>
+            <br /><br />
+            <small class="col-md-4 pull-right">
+                 اگر داوطلب کمتر از 100 ساعت زبان خوانده باشد باید سطح1 را انتخاب کند . اگر داوطلب بیشتر از 100 ساعت و کمتر از 300 ساعت زبان خوانده باشد باید سطح2 را انتخاب کند ولی اگر داوطلب بیشتر از 300 ساعت زبان خوانده باشد باید سطح3 را انتخاب کند
+            </small>
+            <!--Select Level-->
+
+       
+            <br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
+        </form>
+
+        <br /><br /><br /><br /><br />
+        <br class="visible-xs" /><br class="visible-xs" /><br class="visible-xs" />
+        <br class="visible-xs" /><br class="visible-xs" /><br class="visible-xs" />
+        <br class="visible-xs" /><br class="visible-xs" /><br class="visible-xs" />
+        <br class="visible-xs" /><br class="visible-xs" /><br class="visible-xs" />
+
+        <div class="container">
+            <input type="button" class="btn btn-success pull-right col-md-4 col-xs-12 " value="Next">
+        </div>
+        <br /><br /><br /><br /><br />
+
+        <div class="modal-footer navbar-fixed-bottom " id="Footer" style="text-align: center;">
+            @all rights of this website reserved to <strong>Paarseh-Novin</strong>
+        </div>
+
+    </body>
+</html>
